@@ -33,7 +33,8 @@ app.get("/", (req, res) => {
 app.get("/api/health", (req, res) => {
     res.json({
         status: "OK",
-        message: "Backend is healthy"
+        message: "Backend is healthy",
+	instance: process.env.INSTANCE_NAME || "backend-default"
     });
 });
 

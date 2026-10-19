@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "/api/tasks";
 
 function App() {
     const [tasks, setTasks] = useState([]);
